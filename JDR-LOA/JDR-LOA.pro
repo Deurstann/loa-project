@@ -16,11 +16,21 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    character.cpp \
+    inventory.cpp \
+    item.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    weapon.cpp
 
 HEADERS += \
-    mainwindow.h
+    Race.h \
+    character.h \
+    element.h \
+    inventory.h \
+    item.h \
+    mainwindow.h \
+    weapon.h
 
 FORMS += \
     mainwindow.ui
