@@ -110,3 +110,43 @@ unsigned int Character::getDefense() const
 {
     return defense;
 }
+
+unsigned int Character::getPvMax() const
+{
+    return pvMax;
+}
+
+void Character::setPvMax(unsigned int value)
+{
+    pvMax = value;
+}
+
+unsigned int Character::getPv() const
+{
+    return pv;
+}
+
+void Character::setPv(unsigned int value)
+{
+    pv = value;
+}
+
+unsigned int Character::getManaMax() const
+{
+    return manaMax;
+}
+
+void Character::setManaMax(unsigned int value)
+{
+    manaMax = value;
+}
+
+unsigned int Character::getMana() const
+{
+    return mana;
+}
+
+void Character::setMana(unsigned int value)
+{
+    mana = value;
+}

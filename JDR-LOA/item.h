@@ -4,12 +4,12 @@
 #include <QObject>
 #include <QImage>
 
-class item
+class Item
 {
 public:
-    item(QString name, unsigned int value, unsigned int weight,QString description, QImage illustration);
-    bool operator==(item i);
-    bool operator<(item i);
+    Item(QString name, unsigned int value, unsigned int weight,QString description, QImage illustration);
+    bool operator==(Item i);
+    bool operator<(Item i);
 
     unsigned int getId() const;
 
@@ -27,6 +27,7 @@ private:
     static unsigned int id_max;
     unsigned int id;
     QString name;
+    unsigned int occurences;
     unsigned int value;
     unsigned int weight;
     QString description;

@@ -1,7 +1,10 @@
 #ifndef CHARACTER_H
 #define CHARACTER_H
 #include <QObject>
-#include "Race.h"
+#include "race.h"
+#include "inventory.h"
+#include "skill.h"
+
 
 class Character
 {
@@ -39,6 +42,18 @@ public:
 
     unsigned int getDefense() const;
 
+    unsigned int getPvMax() const;
+    void setPvMax(unsigned int value);
+
+    unsigned int getPv() const;
+    void setPv(unsigned int value);
+
+    unsigned int getManaMax() const;
+    void setManaMax(unsigned int value);
+
+    unsigned int getMana() const;
+    void setMana(unsigned int value);
+
 private:
     QString name;
     unsigned int age;
@@ -51,7 +66,12 @@ private:
     unsigned int mind;
     unsigned int charisma;
     unsigned int defense;
-
+    unsigned int pvMax;
+    unsigned int pv;
+    unsigned int manaMax;
+    unsigned int mana;
+    QVector<Skill> skills;
+    Inventory inventory;
 };
 
 #endif // CHARACTER_H

@@ -5,13 +5,19 @@
 #include <QVector>
 #include <item.h>
 
-class inventory
+class Inventory
 {
 public:
-    inventory();
+    Inventory();
+    bool addItem(Item item);
+    void removeItem(Item item);
+
+    unsigned int getCapacity() const;
+    void setCapacity(unsigned int value);
+
 private:
     unsigned int capacity;
-    QVector<item> objects;
+    QVector<Item> objects;
 };
 
 #endif // INVENTORY_H

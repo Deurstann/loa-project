@@ -16,20 +16,25 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    armor.cpp \
     character.cpp \
     inventory.cpp \
     item.cpp \
     main.cpp \
     mainwindow.cpp \
+    skill.cpp \
     weapon.cpp
 
 HEADERS += \
-    Race.h \
+    armor.h \
+    attribute.h \
     character.h \
     element.h \
     inventory.h \
     item.h \
     mainwindow.h \
+    race.h \
+    skill.h \
     weapon.h
 
 FORMS += \
@@ -42,3 +47,8 @@ TRANSLATIONS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+DISTFILES +=
+
+RESOURCES += \
+    Resources.qrc

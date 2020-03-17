@@ -5,37 +5,37 @@
 
 
 
-item::item(QString name, unsigned int value, unsigned int weight, QString description, QImage illustration)
+Item::Item(QString name, unsigned int value, unsigned int weight, QString description, QImage illustration)
 {
 
 }
 
-unsigned int item::getId() const
+unsigned int Item::getId() const
 {
     return id;
 }
 
-QString item::getName() const
+QString Item::getName() const
 {
     return name;
 }
 
-unsigned int item::getValue() const
+unsigned int Item::getValue() const
 {
     return value;
 }
 
-unsigned int item::getWeight() const
+unsigned int Item::getWeight() const
 {
     return weight;
 }
 
-QString item::getDescription() const
+QString Item::getDescription() const
 {
     return description;
 }
 
-QImage item::getIllustration() const
+QImage Item::getIllustration() const
 {
     return illustration;
 }
